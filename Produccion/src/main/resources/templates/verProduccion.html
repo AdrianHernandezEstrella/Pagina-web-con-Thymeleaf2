@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>API: Serving Web Content</title>
+
+<head th:replace="~{layout :: head}">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+</head>
+<body>
+	<header th:replace="~{layout :: header}"> </header>
+	<div class="container">
+		<div >
+			<p th:text="'actividad: ' + ${startProduccion.actividad} " />
+			<p th:text="'codigo: ' + ${startProduccion.codigo} " />
+			<p th:text="'Id:  ' + ${startProduccion.id} " />
+			<p th:text="'Nombre: ' + ${startProduccion.nombre} " />
+			<p th:text="'responsable: ' + ${startProduccion.responsable} " />
+			<p th:text="'Uso: ' + ${startProduccion.uso} " />
+		</div>
+
+	</div>
+
+	<br>
+	<br>
+	<br>
+</body>
+</html>
